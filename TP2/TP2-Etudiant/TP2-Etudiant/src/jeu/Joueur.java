@@ -1,6 +1,6 @@
 package jeu;
 
-public class Joueur  {
+public class Joueur implements Comparable<Joueur>  {
     private String nom;
 
     public Joueur(String nom) {

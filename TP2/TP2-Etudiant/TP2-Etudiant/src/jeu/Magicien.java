@@ -1,6 +1,6 @@
 package jeu;
 
-public class Magicien {
+public class Magicien extends AbstractPersonnage {
     public static final int MAX_POINTS_VIE_PERDU = 6;
     private int pointsRecuperes;
 

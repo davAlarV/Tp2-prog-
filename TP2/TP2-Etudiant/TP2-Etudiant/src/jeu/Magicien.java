@@ -16,7 +16,7 @@ public class Magicien {
         if (pointDeViePerdu < 0) pointDeViePerdu = 0;
         setPointDeVie(getPointDeVie() - pointDeViePerdu);
     }
-    
+
     @Override
     public String toString() {
         return "Magicien{nom= " + nom + ", pointDeVie= " + pointDeVie + ", pointsRecuperes= " + pointsRecuperes + "}";

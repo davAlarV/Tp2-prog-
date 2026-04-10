@@ -11,10 +11,19 @@ public class JeuFacile {
 
     public JeuFacile() {
         //TODO JF1
+        joueurs = new ArrayList<>();
+        personnagesFacile = new HashMap<>();
     }
 
     public void joue() {
         //TODO JF3
+        while (encoreUnVivant()){
+            List<String> noms = new ArrayList<>(personnagesFacile.keySet());
+            for (String nom : noms) {
+                joueJoueurFacile(nom);
+            }
+            retireVaincuFacile();
+        }
     }
 
     /*package*/ void joueJoueurFacile(String nom) {
@@ -23,6 +32,15 @@ public class JeuFacile {
 
     /*package*/ void retireVaincuFacile() {
         //TODO JF4
+        Iterator<Map.Entry<String, AbstractPersonnage>> it =
+                personnagesFacile.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry<String, AbstractPersonnage> entry = it.next();
+            if (entry.getValue().getPointDeVie() <= 0){
+                joueurs.removeIf(j -> j.getNom().equals(entry.getKey()) );
+                it.remove();
+            }
+        }
     }
 
     //Ne pas changer cette méthde

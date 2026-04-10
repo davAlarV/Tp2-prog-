@@ -1,0 +1,139 @@
+
+
+On joue le tour 0
+On joue les personnages du joueur Pierre
+magicien1 a maintenent 10 points de vie.
+On joue les personnages du joueur Simon
+pion1 a maintenent 11 points de vie.
+
+On joue le tour 1
+On joue les personnages du joueur Pierre
+magicien1 a maintenent 8 points de vie.
+On joue les personnages du joueur Simon
+pion1 a maintenent 8 points de vie.
+
+On joue le tour 2
+On joue les personnages du joueur Pierre
+magicien1 a maintenent 6 points de vie.
+On joue les personnages du joueur Simon
+pion1 a maintenent 7 points de vie.
+
+On joue le tour 3
+On joue les personnages du joueur Pierre
+magicien1 a maintenent 9 points de vie.
+On joue les personnages du joueur Simon
+pion1 a maintenent 2 points de vie.
+
+On joue le tour 4
+On joue les personnages du joueur Pierre
+magicien1 a maintenent 4 points de vie.
+On joue les personnages du joueur Simon
+pion1 a maintenent 1 points de vie.
+
+On joue le tour 5
+On joue les personnages du joueur Pierre
+magicien1 a maintenent 4 points de vie.
+On joue les personnages du joueur Simon
+pion1 a maintenent -3 points de vie.
+Le personnage pion1 appartenant au joueur Simon a été retiré
+
+On joue le tour 6
+On joue les personnages du joueur Pierre
+magicien1 a maintenent 0 points de vie.
+On joue les personnages du joueur Simon
+Simon n'a plus de personnages
+Le personnage magicien1 appartenant au joueur Pierre a été retiré
+Voici l'historique de pion1
+__________________________
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+ 12                                                                                       
+--- 11                                                                                    
+------                                                                                    
+------                                                                                    
+------ 8                                                                                  
+--------- 7                                                                               
+------------                                                                              
+------------                                                                              
+------------                                                                              
+------------                                                                              
+------------ 2                                                                            
+--------------- 1                                                                      
+__________________________
+Voici l'historique de pion1
+__________________________
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+12  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ . 11  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  . 8  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  . 7  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  . 2  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  . 1  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+__________________________
+Voici l'historique de magicien1
+__________________________
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+ 14                                                                                       
+---                                                                                       
+---                                                                                       
+---                                                                                       
+--- 10                                                                                    
+------       9                                                                            
+------ 8    ---                                                                           
+---------   ---                                                                           
+--------- 6 ---                                                                           
+---------------                                                                           
+--------------- 4  4                                                                      
+---------------------                                                                     
+---------------------                                                                     
+---------------------                                                                     
+__________________________
+Voici l'historique de magicien1
+__________________________
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+14  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ . 10  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  . 9  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  . 8  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  . 6  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  . 4 4  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+__________________________
+
+Process finished with exit code 0

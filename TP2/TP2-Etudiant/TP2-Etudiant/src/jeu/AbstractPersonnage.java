@@ -1,6 +1,8 @@
 package jeu;
+
 import java.util.ArrayList;
 import java.util.List;
+
 public abstract class AbstractPersonnage {
     private final static int MAX_POINTS_VIE = 20;
     private final static int LONGUEUR_HISTORIQUE = 30;
@@ -41,6 +43,16 @@ public abstract class AbstractPersonnage {
 
         System.out.println("__________________________");
         //TODO AP1
+        for (int ligne = 0; ligne < dessin.length; ligne++) {
+            for (int col = 0; col < dessin[ligne].length; col++) {
+                if (dessin[ligne][col] != 0) {
+                    dessineNombre(dessin[ligne][col]);
+                } else {
+                    System.out.print("    ");
+                }
+            }
+            System.out.println();
+        }
         System.out.println("__________________________");
 
     }
@@ -52,6 +64,24 @@ public abstract class AbstractPersonnage {
 
         System.out.println("__________________________");
         //TODO AP1b
+        for (int col = 0; col < dessin[0].length; col++) {
+            int max = 0;
+            for (int ligne = 0; ligne < dessin.length; ligne++) {
+                if (dessin[ligne][col] > max) {
+                    max = dessin[ligne][col];
+                }
+            }
+            maxPositions[col] = max;
+        }
+
+        for (int col = 0; col < maxPositions.length; col++) {
+            if (maxPositions[col] != 0) {
+                dessineNombre(maxPositions[col]);
+            } else {
+                System.out.print("    ");
+            }
+        }
+        System.out.println();
 
         System.out.println("__________________________");
 
@@ -109,7 +139,6 @@ public abstract class AbstractPersonnage {
     public int hashCode() {
         return nom.hashCode();
     }
-
 
 
 }

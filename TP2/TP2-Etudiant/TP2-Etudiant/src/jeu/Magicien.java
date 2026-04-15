@@ -6,15 +6,20 @@ public class Magicien extends AbstractPersonnage {
 
     public Magicien(int pointsRecuperes, String nom) {
         super(20, nom);
+        assert pointsRecuperes < 10 : "pointsRecuperes trop grand";
         this.pointsRecuperes = pointsRecuperes;
     }
 
     @Override
     public void joue() {
-        int pointDeViePerdu = (int) (Math.random() * MAX_POINTS_VIE_PERDU) - pointsRecuperes;
+        int pointDeViePerdu = (int) (Math.random() * MAX_POINTS_VIE_PERDU);
 
-        if (pointDeViePerdu < 0) pointDeViePerdu = 0;
         setPointDeVie(getPointDeVie() - pointDeViePerdu);
+
+        // 🔥 REGLA IMPORTANTE DEL TP
+        if (getPointDeVie() == 1 || getPointDeVie() == 2) {
+            setPointDeVie(getPointDeVie() + pointsRecuperes);
+        }
     }
 
     @Override

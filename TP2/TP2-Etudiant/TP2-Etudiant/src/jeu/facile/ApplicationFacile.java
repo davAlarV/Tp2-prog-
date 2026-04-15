@@ -1,6 +1,7 @@
 package jeu.facile;
 
 import jeu.Joueur;
+import jeu.Magicien;
 import jeu.Pion;
 
 public class ApplicationFacile {
@@ -15,17 +16,17 @@ public class ApplicationFacile {
         jeu.ajouteJoueur(secondJoueur);
 
         Pion pion = new Pion(1,"pion1");
-        //Magicien magicien = new Magicien(???);
+        Magicien magicien = new Magicien("magicien1", 15, 3);
 
         jeu.ajoutePersonnageFacile(pion,premierJoueur);
-        //jeu.ajoutePersonnageFacile(magicien,secondJoueur);
+        jeu.ajoutePersonnageFacile(magicien,secondJoueur);
 
         // On lance l'exécution
         jeu.joue();
 
         //On affiche les stats de chaque joueurs
         pion.dessineHistorique();
-        //magicien.dessineHistorique();
+        magicien.dessineHistorique();
 
 
     }

@@ -1,3 +1,10 @@
+/**
+ * TP2 - Programmation
+ * Noms: David Alarcon
+ *       Harold Dominguez
+ *
+ */
+
 package jeu;
 
 import java.util.ArrayList;

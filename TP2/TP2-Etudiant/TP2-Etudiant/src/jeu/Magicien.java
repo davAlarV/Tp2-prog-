@@ -14,12 +14,13 @@ public class Magicien extends AbstractPersonnage {
     public void joue() {
         int pointDeViePerdu = (int) (Math.random() * MAX_POINTS_VIE_PERDU);
 
-        setPointDeVie(getPointDeVie() - pointDeViePerdu);
+        int nouvelleVie = getPointDeVie() - pointDeViePerdu;
 
-        // 🔥 REGLA IMPORTANTE DEL TP
-        if (getPointDeVie() == 1 || getPointDeVie() == 2) {
-            setPointDeVie(getPointDeVie() + pointsRecuperes);
+        if (nouvelleVie == 1 || nouvelleVie == 2) {
+            nouvelleVie += pointsRecuperes;
         }
+
+        setPointDeVie(nouvelleVie);
     }
 
     @Override

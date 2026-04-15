@@ -17,19 +17,28 @@ public class JeuFacile {
 
     public void joue() {
         //TODO JF3
-        while (encoreUnVivant()){
+        int tour = 0;
+        Collections.sort(joueurs);
+        while (encoreUnVivant()) {
+
+            System.out.println("On joue le tour " + tour);
+
             List<String> noms = new ArrayList<>(personnagesFacile.keySet());
+
             for (String nom : noms) {
+                System.out.println("On joue les personnages du joueur " + nom);
                 joueJoueurFacile(nom);
             }
+
             retireVaincuFacile();
+            tour++;
         }
     }
 
     /*package*/ void joueJoueurFacile(String nom) {
         //TODO JF3
         AbstractPersonnage perso = personnagesFacile.get(nom);
-        if (perso != null){
+        if (perso != null) {
             perso.joue();
         }
     }
@@ -38,11 +47,23 @@ public class JeuFacile {
         //TODO JF4
         Iterator<Map.Entry<String, AbstractPersonnage>> it =
                 personnagesFacile.entrySet().iterator();
+
         while (it.hasNext()) {
             Map.Entry<String, AbstractPersonnage> entry = it.next();
-            if (entry.getValue().getPointDeVie() <= 0){
-                joueurs.removeIf(j -> j.getNom().equals(entry.getKey()) );
+
+            AbstractPersonnage perso = entry.getValue();
+            String nomJoueur = entry.getKey();
+
+            if (perso.getPointDeVie() <= 0) {
+
+                System.out.println("Le personnage " + perso.getNom()
+                        + " appartenant au joueur " + nomJoueur + " a été retiré");
+
                 it.remove();
+
+                joueurs.removeIf(j -> j.getNom().equals(nomJoueur));
+
+                System.out.println("Le joueur " + nomJoueur + " n'a plus de personnages");
             }
         }
     }
@@ -55,13 +76,15 @@ public class JeuFacile {
 
     public void ajouteJoueur(Joueur joueur) {
         //TODO JF2
-        joueurs.add(joueur);
+        if (joueur != null) {
+            joueurs.add(joueur);
+        }
     }
 
 
     public void ajoutePersonnageFacile(AbstractPersonnage perso, Joueur joueur) {
         //TODO JF2
-        personnagesFacile.put(joueur.getNom(),perso);
+        personnagesFacile.put(joueur.getNom(), perso);
     }
 
     //Les méthodes suivatnes servent uniquement pour les tests________________________________________

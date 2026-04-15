@@ -23,11 +23,9 @@ public class JeuFacile {
 
             System.out.println("On joue le tour " + tour);
 
-            List<String> noms = new ArrayList<>(personnagesFacile.keySet());
-
-            for (String nom : noms) {
-                System.out.println("On joue les personnages du joueur " + nom);
-                joueJoueurFacile(nom);
+            for (Joueur joueur : joueurs) {
+                System.out.println("On joue les personnages du joueur " + joueur.getNom());
+                joueJoueurFacile(joueur.getNom());
             }
 
             retireVaincuFacile();
@@ -84,6 +82,9 @@ public class JeuFacile {
 
     public void ajoutePersonnageFacile(AbstractPersonnage perso, Joueur joueur) {
         //TODO JF2
+        assert perso != null : "Personnage null";
+        assert joueur != null : "Joueur null";
+        assert joueurs.contains(joueur) : "Joueur pas dans la liste";
         personnagesFacile.put(joueur.getNom(), perso);
     }
 

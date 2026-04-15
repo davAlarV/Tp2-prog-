@@ -5,17 +5,20 @@ import java.util.List;
 
 public abstract class AbstractPersonnage {
     private final static int MAX_POINTS_VIE = 20;
-    private final static int POINTS_VIE_INITIAL = MAX_POINTS_VIE;
     private final static int LONGUEUR_HISTORIQUE = 30;
+
     protected int pointDeVie;
     protected String nom;
     private List<Integer> historiquePointDeVie;
 
-    public AbstractPersonnage(int POINTS_VIE_INITIAL, String nom) {
-        assert pointDeVie > MAX_POINTS_VIE : "Points de vie trop grand";
+    public AbstractPersonnage(int pointsVieInitial, String nom) {
+
+        assert pointsVieInitial <= MAX_POINTS_VIE : "Points de vie trop grand";
         assert nom != null : "Nom null";
+
         this.nom = nom;
-        this.pointDeVie = pointDeVie;
+        this.pointDeVie = pointsVieInitial;
+
         historiquePointDeVie = new ArrayList<>(LONGUEUR_HISTORIQUE);
     }
 
@@ -46,10 +49,11 @@ public abstract class AbstractPersonnage {
         //TODO AP1
         for (int ligne = 0; ligne < dessin.length; ligne++) {
             for (int col = 0; col < dessin[ligne].length; col++) {
+
                 if (dessin[ligne][col] != 0) {
                     dessineNombre(dessin[ligne][col]);
                 } else {
-                    System.out.print("    ");
+                    System.out.print("...");
                 }
             }
             System.out.println();
@@ -88,9 +92,12 @@ public abstract class AbstractPersonnage {
 
     }
 
-    private void dessineNombre(int i1) {
-        String remplisseur = i1 / 10 == 0 ? " " : "";
-        System.out.print(" " + i1 + remplisseur);
+    private void dessineNombre(int valeur) {
+        if (valeur < 10) {
+            System.out.print(" " + valeur + " ");
+        } else {
+            System.out.print(" " + valeur);
+        }
     }
 
     public int getPointDeVie() {

@@ -12,7 +12,7 @@ public class Magicien extends AbstractPersonnage {
 
     @Override
     public void joue() {
-        int pointDeViePerdu = (int) (Math.random() * MAX_POINTS_VIE_PERDU);
+        int pointDeViePerdu = (int) (Math.random() * MAX_POINTS_VIE_PERDU) + 1;
 
         int nouvelleVie = getPointDeVie() - pointDeViePerdu;
 
@@ -25,7 +25,7 @@ public class Magicien extends AbstractPersonnage {
 
     @Override
     public String toString() {
-        return "Magicien{nom= " + nom + ", pointDeVie= " + pointDeVie + ", pointsRecuperes= " + pointsRecuperes + "}";
+        return super.toString() + " (Magicien, pointsRecuperes=" + pointsRecuperes + ")";
     }
 
 }

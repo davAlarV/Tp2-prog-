@@ -5,12 +5,13 @@ import java.util.List;
 
 public abstract class AbstractPersonnage {
     private final static int MAX_POINTS_VIE = 20;
+    private final static int POINTS_VIE_INITIAL = 20;
     private final static int LONGUEUR_HISTORIQUE = 30;
     protected int pointDeVie;
     protected String nom;
     private List<Integer> historiquePointDeVie;
 
-    public AbstractPersonnage(int pointDeVie, String nom) {
+    public AbstractPersonnage(int POINTS_VIE_INITIAL, String nom) {
         assert pointDeVie < MAX_POINTS_VIE : "Points de vie trop grand";
         assert nom != null : "Nom null";
         this.nom = nom;

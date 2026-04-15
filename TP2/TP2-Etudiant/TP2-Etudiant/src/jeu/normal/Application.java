@@ -2,6 +2,7 @@ package jeu.normal;
 
 import jeu.Joueur;
 import jeu.Pion;
+import jeu.Magicien;
 
 public class Application {
     public static void main(String[] args) {
@@ -14,24 +15,25 @@ public class Application {
         jeu.ajouteJoueur(premierJoueur);
         jeu.ajouteJoueur(secondJoueur);
 
-        Pion premierPion = new Pion(1,"pion1");
-       // Magicien premierMagicien = new Magicien(???);
-        Pion secondPion = new Pion(1,"pion2");
-       // Magicien secondMagicien = new Magicien(???);
+        Pion premierPion = new Pion(1, "pion1");
+        Magicien premierMagicien = new Magicien("magicien1", 20, 3);
 
-        jeu.ajoutePersonnage(premierPion,premierJoueur);
-        //jeu.ajoutePersonnage(premierMagicien,premierJoueur);
-        jeu.ajoutePersonnage(secondPion,secondJoueur);
-        //jeu.ajoutePersonnage(secondMagicien,secondJoueur);
+        Pion secondPion = new Pion(1, "pion2");
+        Magicien secondMagicien = new Magicien("magicien2", 20, 3);
+
+        jeu.ajoutePersonnage(premierPion, premierJoueur);
+        jeu.ajoutePersonnage(premierMagicien,premierJoueur);
+        jeu.ajoutePersonnage(secondPion, secondJoueur);
+        jeu.ajoutePersonnage(secondMagicien,secondJoueur);
 
         // On lance l'exécution
         jeu.joue();
 
         //On affiche les stats de chaque joueurs
         premierPion.dessineHistorique();
-        //premierMagicien.dessineHistorique();
+        premierMagicien.dessineHistorique();
         secondPion.dessineHistorique();
-        //secondMagicien.dessineHistorique();
+        secondMagicien.dessineHistorique();
 
     }
 }

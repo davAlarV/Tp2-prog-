@@ -21,7 +21,7 @@ public class Jeu {
         int tour = 0;
         Collections.sort(joueurs);
         while (encoreUnVivant()) {
-            System.out.println("On joue le tour" + tour);
+            System.out.println("\n" + "On joue le tour " + tour );
             for (Joueur joueur : joueurs) {
                 System.out.println("On joue les personnages du joueur" + joueur.getNom());
                 joueJoueur(joueur.getNom());

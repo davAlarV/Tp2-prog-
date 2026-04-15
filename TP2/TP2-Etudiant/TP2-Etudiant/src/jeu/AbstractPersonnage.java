@@ -12,13 +12,11 @@ public abstract class AbstractPersonnage {
     private List<Integer> historiquePointDeVie;
 
     public AbstractPersonnage(int pointsVieInitial, String nom) {
-
         assert pointsVieInitial <= MAX_POINTS_VIE : "Points de vie trop grand";
         assert nom != null : "Nom null";
 
         this.nom = nom;
         this.pointDeVie = pointsVieInitial;
-
         historiquePointDeVie = new ArrayList<>(LONGUEUR_HISTORIQUE);
     }
 
@@ -44,31 +42,25 @@ public abstract class AbstractPersonnage {
 
     private void dessine(int[][] dessin) {
         System.out.println("Voici l'historique de " + nom);
-
         System.out.println("__________________________");
         //TODO AP1
         for (int ligne = 0; ligne < dessin.length; ligne++) {
             for (int col = 0; col < dessin[ligne].length; col++) {
-
                 if (dessin[ligne][col] != 0) {
                     dessineNombre(dessin[ligne][col]);
                 } else {
-                    System.out.print("...");
+                    System.out.print(" .  ");
                 }
             }
             System.out.println();
         }
-        System.out.println("__________________________");
 
+        System.out.println("__________________________");
     }
 
     private void dessineBonus(int[][] dessin) {
-
-        int[] maxPositions = new int[dessin[0].length];
-        System.out.println("Voici l'historique de " + nom);
-
-        System.out.println("__________________________");
         //TODO AP1b
+        int[] maxPositions = new int[dessin[0].length];
         for (int col = 0; col < dessin[0].length; col++) {
             int max = 0;
             for (int ligne = 0; ligne < dessin.length; ligne++) {
@@ -78,25 +70,37 @@ public abstract class AbstractPersonnage {
             }
             maxPositions[col] = max;
         }
-
-        for (int col = 0; col < maxPositions.length; col++) {
-            if (maxPositions[col] != 0) {
-                dessineNombre(maxPositions[col]);
-            } else {
-                System.out.print("    ");
-            }
-        }
-        System.out.println();
-
+        System.out.println("Voici l'historique de " + nom);
         System.out.println("__________________________");
 
+        for (int ligne = 0; ligne < dessin.length; ligne++) {
+            for (int col = 0; col < dessin[ligne].length; col++) {
+                if (dessin[ligne][col] != 0) {
+
+                    dessineNombre(dessin[ligne][col]);
+                } else {
+                    int valCol = maxPositions[col];
+
+                    int ligneValeur = valCol == 0 ? -1 : MAX_POINTS_VIE - valCol;
+
+                    if (valCol != 0 && ligne > ligneValeur) {
+                        System.out.print("--- ");
+                    } else {
+                        System.out.print("    ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.println("__________________________");
     }
 
     private void dessineNombre(int valeur) {
         if (valeur < 10) {
-            System.out.print(" " + valeur + " ");
+            System.out.print(" " + valeur + "  ");
         } else {
-            System.out.print(" " + valeur);
+            System.out.print(" " + valeur + " ");
         }
     }
 

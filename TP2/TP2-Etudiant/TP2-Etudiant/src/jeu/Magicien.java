@@ -5,7 +5,7 @@ public class Magicien extends AbstractPersonnage {
     private int pointsRecuperes;
 
     public Magicien(String nom, int pointsVieInitial, int pointsRecuperes) {
-        super(20, nom);
+        super(pointsVieInitial, nom);
         assert pointsRecuperes < 10 : "pointsRecuperes trop grand";
         this.pointsRecuperes = pointsRecuperes;
     }
